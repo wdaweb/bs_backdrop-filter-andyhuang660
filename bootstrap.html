@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+  .container {
+    background-image: url(./20201107-092915_U13380_M651499_4ac4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    overflow: scroll;
+    width: 100vw;
+    height: 100%;
+  }
+  .row .col-sm-12 {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+    margin: auto;
+  }
+  
+  .col-sm-12:nth-child(2){
+    backdrop-filter: none;
+  }
+  .col-sm-12:nth-child(3){
+    backdrop-filter: grayscale(1);
+  }
+  .col-sm-12:nth-child(4){
+    backdrop-filter: brightness(1.5);
+  }
+  .col-sm-12:nth-child(5){
+    backdrop-filter: blur(5px);
+  }
+  .col-sm-12:nth-child(6){
+    backdrop-filter: contrast(0.8);
+  }
+  .col-sm-12:nth-child(7){
+    backdrop-filter: invert(0.7);
+  }
+  .col-sm-12:nth-child(8){
+    backdrop-filter: opacity(0.4);
+  }
+  .col-sm-12:nth-child(9){
+    backdrop-filter: sepia(0.4);
+  }
+  .col-sm-12:nth-child(10){
+    backdrop-filter: saturate(1.8);
+  }
+  .col-sm-12:nth-child(11){
+    backdrop-filter: hue-rotate(120deg);
+  }
+  @media (min-width: 576px) { 
+    .row {
+      display: flex;
+      overflow: scroll;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100vh;
+    }
+    .row .col-md-1 {
+    border: 1px solid black;
+    /* width: 600px;
+    height: 600px; */
+    text-align: center;
+    line-height: 400px;
+    margin: auto;
+  }
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-1">SCROLL</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: none</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: grayscale(1)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: brightness(1.5)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: blur(5px)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: contrast(0.8)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: invert(0.7)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: opacity(0.4)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: sepia(0.4)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: saturate(1.8)</div>
+        <div class="col-sm-12 col-md-1">backdrop-filter: hue-rotate(120deg)</div>
+     </div>
+     </div>
+    </div>
+  
+    
+ 
+ <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
